@@ -1,0 +1,45 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  max-width: 1130px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+}
+.grid div{
+    border: 1px solid green;
+}
+.grid.col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.grid.col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid.col-3-sidebar {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+@media (min-width: 768px) {
+}
+@media (max-width: 768px) {
+  .grid.col-2 {
+    grid-template-columns: 1fr;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+/*teste
